@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { chooseEuropeanstandard } from "./rootSlice";
 
-export const Step2 = () => {
+const Step2 = () => {
   const dispatch = useDispatch();
   const history = useHistory()
   const Europeanstandard = useSelector(state => state.Europeanstandard)
@@ -29,3 +29,5 @@ export const Step2 = () => {
     </form>
   );
 };
+
+export default Step2;

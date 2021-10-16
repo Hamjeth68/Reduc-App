@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-export const Result = () => {
+const Result = () => {
   const state = useSelector(state => state)
 
   return (
@@ -12,3 +12,5 @@ export const Result = () => {
     </>
   )
 }
+
+export default Result;

@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { chooseWeight } from "./rootSlice";
 
-export const Step3 = () => {
+const Step3 = () => {
   const dispatch = useDispatch();
   const history = useHistory()
   const Weight = useSelector(state => state.Weight)
@@ -29,3 +29,5 @@ export const Step3 = () => {
     </form>
   );
 };
+
+export default Step3;

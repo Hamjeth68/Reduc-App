@@ -4,7 +4,8 @@ import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { chooseSupllierLocation } from "./rootSlice";
 
-export const Step4 = () => {
+
+const Step4 = () => {
   const dispatch = useDispatch();
   const history = useHistory()
   const SupllierLocation = useSelector(state => state.SupllierLocation)
@@ -29,3 +30,5 @@ export const Step4 = () => {
     </form>
   );
 };
+
+export default Step4;
