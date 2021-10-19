@@ -1,0 +1,23 @@
+.center {
+  text-align: center;
+  border: 3px solid rgb(194, 194, 194);
+  align-items: center;
+  align-content: flex-end;
+}
+
+.form-class {
+  padding-left: 0px;
+}
+
+.option {
+  align-items: center;
+  padding-left: 550px;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  margin-top: 30px;
+}

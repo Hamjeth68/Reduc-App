@@ -3,6 +3,14 @@ import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { chooseEuropeanstandard } from "./rootSlice";
+import { Button, Container, Label } from 'reactstrap'
+import { Checkbox } from "@mui/material";
+import './Step2.css';
+
+import InputGroup from 'react-bootstrap/InputGroup';
+import Form from 'react-bootstrap/Form';
+
+
 
 const Step2 = () => {
   const dispatch = useDispatch();
@@ -16,17 +24,22 @@ const Step2 = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <div>
-        <label htmlFor="Europeanstandard">Quality</label>
-        <select id="Europeanstandard" name="Europeanstandard" ref={register}>
-          <option value="Europeanstandard">European standard</option>
-          <option value="Average">Average</option>
-          {/* <option value="filled_crust">Filled Crust</option> */}
-        </select>
+    <Container>
+      <div className='f-content'>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <Label>Quality</Label>
+          <InputGroup className="mb-3">
+            <Checkbox id="Europeanstandard" ref={register} value='Europeanstandard' size='medium'></Checkbox>
+            <InputGroup.Text id="inputGroup-sizing-sm">European Standard</InputGroup.Text>
+          </InputGroup>
+          <InputGroup className="mb-3">
+            <Checkbox id="Average" ref={register} size='medium' value='Average'></Checkbox>
+            <InputGroup.Text id="inputGroup-sizing-sm">Average</InputGroup.Text>
+          </InputGroup>
+          <Button>Next</Button>
+        </Form>
       </div>
-      <button>Next</button>
-    </form>
+    </Container >
   );
 };
 

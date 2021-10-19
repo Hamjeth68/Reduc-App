@@ -2,6 +2,16 @@ ul {
   list-style-type: none;
 }
 
+.form-class{
+  padding-left: 0px;
+}
+.button {border-radius: 4px;}
+
+
+.text-label{
+ font-size: x-large;
+}
+
 li {
   display: inline-block;
 }
